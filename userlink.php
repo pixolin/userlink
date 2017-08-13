@@ -31,14 +31,14 @@ function userlink_shortcode( $atts, $content ) {
 	$atts = shortcode_atts(
 		array(
 			'url'          => '',
-			'auction-user' => '',
+			'alt-url' => '',
 		), $atts
 	);
 
 	$url = $atts['url'];
 
 	if ( current_user_can( 'auction-user' ) || current_user_can( 'pending_subscriber' ) ) {
-		$url = $atts['auction-user'];
+		$url = $atts['alt-url'];
 	}
 
 	return '<a href="' . $url . '" class="userlink">' . $content . '</a>' ;
