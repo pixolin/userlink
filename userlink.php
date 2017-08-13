@@ -37,7 +37,7 @@ function userlink_shortcode( $atts, $content ) {
 
 	$url = $atts['url'];
 
-	if ( current_user_can( 'auction-user' ) || current_user_can( 'pending_' ) ) {
+	if ( current_user_can( 'auction-user' ) || current_user_can( 'pending_subscriber' ) ) {
 		$url = $atts['auction-user'];
 	}
 
