@@ -4,7 +4,7 @@ Plugin Name: User Link
 Description: Ads Shortcode that displays different links accoprding to user role
 Author: Bego Mario Garde
 Author URI: http://pixolin.de
-Version: 1.0
+Version: 1.1
 License: GPL2
 */
 
