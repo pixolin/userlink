@@ -44,3 +44,6 @@ function userlink_shortcode( $atts, $content ) {
 	return '<a href="' . $url . '" class="userlink">' . $content . '</a>' ;
 }
 add_shortcode( 'userlink','userlink_shortcode' );
+
+// Enable shortcodes in text widgets
+add_filter( 'widget_text', 'do_shortcode' );
